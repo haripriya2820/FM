@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HP Webpage</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #1e3c72, #2a5298); /* Blue Gradient */
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: yellow;
+    }
+    main {
+      margin-top: 20px;
+    }
+    table {
+      margin: 0 auto;
+      border-collapse: collapse;
+      background-color: white;
+      color: black;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 10px 15px;
+    }
+    th {
+      background-color: #2a5298;
+      color: white;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+    img {
+      margin-top: 15px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+    #learn-more {
+      text-align: center;
+      margin-top: 40px;
+    }
+    #learn-more h2 {
+      background: linear-gradient(90deg, #ffcc00, #ff6600);
+      color: black;
+      padding: 15px 20px;
+      border-radius: 10px;
+      display: inline-block;
+      font-size: 22px;
+      font-weight: bold;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+    #learn-more iframe {
+      margin-top: 10px;
+      border-radius: 10px;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.4);
+    }
+    #course-desc {
+      max-width: 700px;
+      margin: 20px auto;
+      background: rgba(255, 255, 255, 0.9);
+      color: black;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: justify;
+      font-size: 16px;
+      line-height: 1.6;
+      box-shadow: 2px 2px 12px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Haripriya Shanmugam</h1>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <img src="D:\Downloads\FORTUMARS\Haripriya_Photo.jpg" alt="Haripriya Shanmugam" />
+
+  <main>
+    <section id="about">
+      <p>Hello All. Welcome to my learning hub.</p>
+    </section>
+
+    <section id="courses">
+      <h2>Courses & Timings</h2>
+      <table>
+        <tr>
+          <th>Courses</th>
+          <th>Timing</th>
+        </tr>
+        <tr>
+          <td>Python Programming</td>
+          <td>10:00 AM - 11:30 AM</td>
+        </tr>
+        <tr>
+          <td>Machine Learning Basics</td>
+          <td>12:00 PM - 1:30 PM</td>
+        </tr>
+        <tr>
+          <td>Time Series Analysis</td>
+          <td>3:00 PM - 4:30 PM</td>
+        </tr>
+        <tr>
+          <td>Data Visualization</td>
+          <td>5:00 PM - 6:00 PM</td>
+        </tr>
+      </table>
+
+      <div id="course-desc">
+        <p>
+          Our courses are designed to provide a strong foundation in programming, analytics, and applied machine learning. 
+          Starting with <strong>Python Programming</strong>, you’ll learn how to write clean code and solve real-world problems. 
+          The <strong>Machine Learning Basics</strong> session introduces essential algorithms and concepts used in AI-driven applications. 
+          In <strong>Time Series Analysis</strong>, you’ll explore forecasting techniques for business and healthcare data, while 
+          <strong>Data Visualization</strong> helps you master tools and techniques to present insights effectively. 
+          These courses combine theory with hands-on projects to make learning practical and impactful.
+        </p>
+      </div>
+    </section>
+
+    <section id="feedback">
+      <h2>Feedback</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <p>Did you like this page?</p>
+        <input type="radio" id="yes" name="like" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="like" value="no">
+        <label for="no">No</label><br><br>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+
+    <section id="learn-more">
+      <h2>📚 Don’t Miss Out! Get more information & recorded lessons only on Kishorelytics.</h2>
+      <br>
+      <iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/eWHpa8eHk4M" 
+  title="YouTube video player" frameborder="0" 
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+  allowfullscreen>
+</iframe>
+
+    </section>
+
+    <aside>
+      <h3>Like | Share | Comment</h3>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; Haripriya Shanmugam. All rights reserved - 2025</p>
+  </footer>
+</body>
+</html>
